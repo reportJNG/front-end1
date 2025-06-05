@@ -4,7 +4,19 @@ import Layout from "../componants/Layout";
 function Home() {
     return (
         <Layout>
-        <div style={{ maxWidth: "800px", margin: "64px auto 0 auto", textAlign: "center" }}>
+        <div
+            style={{
+                maxWidth: "800px",
+                margin: "64px auto 0 auto",
+                textAlign: "center",
+                backgroundImage: "url('./images/hopital-blur.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                padding: "32px",
+                borderRadius: "16px"
+            }}
+        >
             <div>
                 <h1 style={{ fontSize: "2.5rem", marginBottom: "16px" }}>
                     Bienvenue au Cabinet Médical
@@ -47,13 +59,6 @@ function Home() {
                         Nos Services
                     </a>
                 </div>
-            </div>
-            <div style={{ marginTop: "64px" }}>
-                <img
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-                    alt="Cabinet médical"
-                    style={{ width: "100%", borderRadius: 16, maxHeight: 350, objectFit: "cover" }}
-                />
             </div>
         </div>
         </Layout>

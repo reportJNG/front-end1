@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from '../styles/components/LoginCard.module.css'
 function LoginCard() {
   return (
-    <div>
+    <div className={`${styles.loginCard}`}>
     <div className="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
       <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
       <form>
