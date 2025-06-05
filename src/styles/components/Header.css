@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply bg-gradient-to-r from-blue-500 to-green-300 text-white px-8 py-6 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between  relative z-10;
+}
+
+.header-logo {
+  @apply text-3xl font-bold tracking-widest drop-shadow-md transition-colors duration-300;
+}
+
+.header-logo:hover {
+  @apply text-yellow-300;
+}
+
+.header-nav {
+  @apply flex gap-8 mt-4 sm:mt-0;
+}
+
+.header-nav a {
+  @apply relative text-white text-lg font-medium transition-colors duration-200 hover:text-yellow-300;
+}
+
+.header-nav a::after {
+  content: '';
+  @apply absolute left-0 -bottom-1 h-0.5 w-0 bg-yellow-300 transition-all duration-300;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}

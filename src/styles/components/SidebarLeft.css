@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar-header {
+  @apply px-6 py-4 text-xl font-bold border-b border-gray-700;
+}
+
+.sidebar-menu {
+  @apply flex-1 px-4 py-2 space-y-2 overflow-auto; /* add overflow-auto to scroll if needed */
+}
+
+.sidebar-link {
+  @apply block px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-200;
+}
