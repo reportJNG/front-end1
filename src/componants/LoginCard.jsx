@@ -2,27 +2,39 @@ import React from 'react'
 
 function LoginCard() {
   return (
-     <div className="absolute top-20 right-4 w-80 bg-white p-6 rounded shadow-lg z-10">
-          <h2 className="text-lg font-semibold mb-4">Log In</h2>
+    <div>
+    <div className="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+      <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+      <form>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="email">Email</label>
           <input
-            type="text"
-            placeholder="Username"
-            className="w-full mb-3 p-2 border rounded"
+            type="email"
+            id="email"
+            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your email"
           />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="password">Password</label>
           <input
             type="password"
-            placeholder="Password"
-            className="w-full mb-3 p-2 border rounded"
+            id="password"
+            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your password"
           />
-          <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Submit
-          </button>
-          <button
-            onClick={() => setShowLogin(false)}
-            className="mt-2 text-sm text-gray-500 hover:underline block mx-auto"
-          >
-            Cancel
-          </button>
+        </div>
+        <button
+          type="submit"
+          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
+        >
+          Login
+        </button>
+      </form>
+      <p className="mt-4 text-sm text-center text-gray-600">
+        Don't have an account? <a href="/signup" className="text-blue-600 hover:underline">Sign up</a>
+      </p>
+    </div>
         </div>
   )
 }

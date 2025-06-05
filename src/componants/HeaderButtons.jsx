@@ -7,9 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 function HeaderButtons() {
-      const handleLoginClickLogin = () => {
-    navigate('/login'); // Navigate to the login page programmatically
-  };
+
+  
    
 
     return (

@@ -6,6 +6,7 @@ function Login() {
   return (
     <Layout>
         <LoginCard />
+        
     </Layout>
   )
 }
